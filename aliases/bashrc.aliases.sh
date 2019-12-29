@@ -30,9 +30,4 @@ alias cl='clear && ls'     #  Clear the screen and long list
 alias td2='tree ./ -d -L 2'
 alias t2='tree ./ -L 2'
 
-# networking
-alias lanip='ifconfig | grep inet | grep broadcast | cut -d " " -f 2'
-alias updatehosts='sudo node ~/Desktop/Home/Scripts/update_hosts_file/update_hosts.js'
-
-alias projects='cd ~/Projects && ll'
 alias xx='clear'
