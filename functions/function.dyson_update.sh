@@ -1,5 +1,5 @@
 function dyson_update {
-    dyson_home="~/.dyson"
+    dyson_home=~/.dyson
     back=$(pwd)
     if [[ -d "${dyson_home}" ]]; then
         cd ${dyson_home}
