@@ -9,6 +9,10 @@ function globalSetup {
     source $scriptDir/../exports/bashrc.exports.sh
     source $scriptDir/../aliases/bashrc.aliases.sh
     source $scriptDir/../functions/bashrc.functions.sh
+    
+    if [[ -f "${scriptDir}/../.local/also.sh" ]]; then
+        source ${scriptDir}/../.local/also.sh
+    fi
 
 }
 globalSetup
