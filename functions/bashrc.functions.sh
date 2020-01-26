@@ -5,6 +5,7 @@ function setupGlobalFunctions {
 	source $scriptDir/function.todo.sh
 	source $scriptDir/function.fullpath.sh
 	source $scriptDir/function.dyson_update.sh
+	source $scriptDir/function.track.sh
 	unset -f setupGlobalFunctions
 }
 setupGlobalFunctions
