@@ -1,6 +1,13 @@
 function setupDevFunctions {
 	scriptDir=$(dirname ${BASH_SOURCE[0]})
-	source $scriptDir/function.decode_jwt.sh
+	functions=(
+		"decode_jwt"
+		"git_save"
+	)
+	for func in ${functions[@]}; do
+		source "${scriptDir}/function.${func}.sh"
+	done
+
   unset -f setupDevFunctions
 }
 setupDevFunctions
