@@ -3,6 +3,7 @@ function setupDevFunctions {
 	functions=(
 		"decode_jwt"
 		"git_save"
+		"git_current_branch"
 	)
 	for func in ${functions[@]}; do
 		source "${scriptDir}/function.${func}.sh"
