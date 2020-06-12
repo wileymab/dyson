@@ -7,6 +7,7 @@ function setupGlobalFunctions {
 		"todo"
 		"dyson_update"
 		"track"
+		"chksum"
 	)
 	for func in ${functions[@]}; do
 		source "${scriptDir}/function.${func}.sh"
